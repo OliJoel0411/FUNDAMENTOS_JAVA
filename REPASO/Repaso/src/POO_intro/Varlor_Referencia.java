@@ -10,6 +10,9 @@ public class Varlor_Referencia {
         //Creación de Objetos
     // TipoObjeto  nombreRef =  new (instancia-Ref_Memoria)
          // ref_Memoria
+       
+         
+        /* 
         Cuenta cuentaOli  = new Cuenta();
         Cuenta cuentaJoel = cuentaOli;
         Cuenta cuentaJose = cuentaOli;
@@ -37,5 +40,6 @@ public class Varlor_Referencia {
         System.out.println(cuentaJose.noCuenta);//99999
         System.out.println(cuentaMag.noCuenta);//99999
         System.out.println(cuentaHey.noCuenta);// 77777
+*/
     }
 }

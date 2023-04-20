@@ -7,9 +7,48 @@ package POO_intro;
 public class Cuenta {
     // Atributos
     // Tipo nombre;
-    int noCuenta;
-    double saldo;
-    String titular;
+    
+    // Modificadores de acceso
+    /*
+    
+    public: Se puede acceder desde cualquier clase. 
+    private: Se puede acceder solo desde la clase donde es creada. (paquete donde se encuentra)
+    protected: Se puede acceder desde una clase heredada
+    
+    */
+    
+    
+    private int noCuenta;
+    //private String IdUsuario;
+    private double saldo;
+    private String titular;
+    
+    // modificadores de acceso
+    /*
+    Get y Set
+    Get: Consultores
+    Set: Modificar
+    Apuntador this
+    this.noCuenta
+    this.saldo
+    
+    
+    
+    */
+    // Metodo consultor No. cuenta
+    // modAcceso tipoRetorno nombreMetodo(){}
+    public int getNoCuenta(){
+        return this.noCuenta;
+    }// Fin getNoCuenta
+    
+    // Metido modificador No Cuenta
+    public void setNoCuenta(int cuenta){
+    
+        this.noCuenta = cuenta;
+    
+    }// fin setNoCuenta
+    
+    
     // Metodos
     /*
     Tipos de métodos
@@ -41,10 +80,10 @@ public class Cuenta {
           
           if(valor<0){
               System.out.println("El valor es incorrecto");
-              return saldo;
+              return this.saldo;
           }else{
-          saldo += valor;
-          return saldo;
+          this.saldo += valor;
+          return this.saldo;
             }
           
           
